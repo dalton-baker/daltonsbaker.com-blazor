@@ -33,7 +33,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        local-dir: /home/runner/work/daltonsbaker.com-blazor/daltonsbaker.com-blazor/Daltonsbaker.Com.Common/bin/Release/net5.0/publish/wwwroot/
+        local-dir: /home/runner/work/daltonsbaker.com-blazor/daltonsbaker.com-blazor/Daltonsbaker.Com/bin/Release/net5.0/publish/wwwroot/
         server: 66.96.162.135
         username: daltonsbaker-deploy
         password: ${{ secrets.daltonsbaker_password }}

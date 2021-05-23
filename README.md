@@ -5,7 +5,7 @@ This is a website I made to show off my portfolio.
 
 Master Status:
 
-[![.NET](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/dotnet.yml)
+[![master CI/CD](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/master-CICD.yml/badge.svg?branch=master)](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/master-CICD.yml)
 
 
 Dev Status:

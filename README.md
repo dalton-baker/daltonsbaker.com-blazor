@@ -3,6 +3,7 @@
 This is a website I made to show off my portfolio.
 
 [![master CI/CD](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/master-CICD.yml/badge.svg?branch=master&event=push)](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/master-CICD.yml)
+
 [![dev CI](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/dev-CI.yml/badge.svg?branch=dev&event=push)](https://github.com/dalton-baker/daltonsbaker.com-blazor/actions/workflows/dev-CI.yml)
 
 

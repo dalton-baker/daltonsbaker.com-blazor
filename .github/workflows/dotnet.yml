@@ -27,7 +27,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
-    - name: Publish Release
+    - name: Build Release
       run: dotnet publish -c Release -r linux-x64
     
     - name: 📂 Sync files

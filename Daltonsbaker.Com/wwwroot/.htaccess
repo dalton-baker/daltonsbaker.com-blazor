@@ -1,0 +1,70 @@
+# Begin EnforceSSL metalsmarketdisplay.com
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    RewriteBase /
+
+    # You must add all possible urls in your application here
+    RewriteRule ^counter /index.html [L]
+    RewriteRule ^fetchdata /index.html [L]
+    
+    AddEncoding gzip .gz
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.json $1\.json\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.dll $1\.dll\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.woff $1\.woff\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.woff2 $1\.woff2\.gz [QSA]
+	
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.ico $1\.ico\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.html $1\.html\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.wasm $1\.wasm\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.blat $1\.blat\.gz [QSA]
+    
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.dat $1\.dat\.gz [QSA]
+    
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+    RewriteRule \.json\.gz$ - [T=text/json,E=no-gzip:1]
+    RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1]
+    RewriteRule \.ico\.gz$ - [T=image/ico,E=no-gzip:1]
+    RewriteRule \.wasm\.gz$ - [T=application/wasm,E=no-gzip:1]
+    RewriteRule \.dll\.gz$ - [T=application/octet-stream,E=no-gzip:1]
+    RewriteRule \.blat\.gz$ - [T=application/octet-stream,E=no-gzip:1]
+    RewriteRule \.dat\.gz$ - [T=application/octet-stream,E=no-gzip:1]
+    RewriteRule \.woff\.gz$ - [T=application/font-woff,E=no-gzip:1]
+    RewriteRule \.woff2\.gz$ - [T=application/font-woff,E=no-gzip:1]
+    
+</IfModule>
+
+# End EnforceSSL
+
+Options +ExecCGI
+AddHandler cgi-script .py
+AddHandler cgi-script .pl

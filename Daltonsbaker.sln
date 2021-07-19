@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daltonsbaker.Com", "Daltonsbaker.Com\Daltonsbaker.Com.csproj", "{43FADD6B-8AC5-44F8-A2D5-0909A05DB871}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daltonsbaker.Com.Common", "Daltonsbaker.Com.Common\Daltonsbaker.Com.Common.csproj", "{1C56DAB2-0365-4A04-848D-A9146695E69C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Daltonsbaker.Com.Test", "Daltonsbaker.Com.Test\Daltonsbaker.Com.Test.csproj", "{3F6C008D-6702-457E-90D2-3F3504537E96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45C81892-6C59-42B3-B25E-D51DF71F272A}"
@@ -15,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\workflows\master-CICD.yml = .github\workflows\master-CICD.yml
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daltonsbaker.Com.Pages", "Daltonsbaker.Com.Pages\Daltonsbaker.Com.Pages.csproj", "{88E988FE-7783-4CFB-BEBE-40D90261C8AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +26,14 @@ Global
 		{43FADD6B-8AC5-44F8-A2D5-0909A05DB871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FADD6B-8AC5-44F8-A2D5-0909A05DB871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FADD6B-8AC5-44F8-A2D5-0909A05DB871}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C56DAB2-0365-4A04-848D-A9146695E69C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C56DAB2-0365-4A04-848D-A9146695E69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C56DAB2-0365-4A04-848D-A9146695E69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C56DAB2-0365-4A04-848D-A9146695E69C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F6C008D-6702-457E-90D2-3F3504537E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F6C008D-6702-457E-90D2-3F3504537E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F6C008D-6702-457E-90D2-3F3504537E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F6C008D-6702-457E-90D2-3F3504537E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E988FE-7783-4CFB-BEBE-40D90261C8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E988FE-7783-4CFB-BEBE-40D90261C8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E988FE-7783-4CFB-BEBE-40D90261C8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E988FE-7783-4CFB-BEBE-40D90261C8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

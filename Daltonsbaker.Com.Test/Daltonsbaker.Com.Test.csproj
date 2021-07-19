@@ -16,8 +16,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Daltonsbaker.Com.Common\Daltonsbaker.Com.Common.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -5,4 +5,10 @@
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+    .page::-webkit-scrollbar {
+        display: none;
+    }

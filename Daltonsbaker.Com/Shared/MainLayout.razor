@@ -1,60 +1,8 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <MudSwipeArea OnSwipe="@OnSwipe" Style="width: 100%; height: 100%;">
-        <MudCarousel Style="height: 100%;"
-                     TData="object"
-                     @ref="_mudCarousel"
-                     ShowArrows="true"
-                     ShowDelimiters="true"
-                     AutoCycle="false"
-                     @bind-SelectedIndex="@SelectedIndex">
-
-            <DelimiterTemplate Context="selected">
-                <div class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
-                    <span class="mud-icon-button-label">
-                        <MudIcon Icon="@(selected ? Icons.Material.Filled.RadioButtonChecked : Icons.Material.Filled.RadioButtonUnchecked)" Style="color: #FFFFFF" />
-                    </span>
-                </div>
-            </DelimiterTemplate>
-            <PreviousButtonTemplate>
-                <div class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
-                    <span class="mud-icon-button-label">
-                        <MudIcon Class="mud-ripple mud-ripple-icon mud-icon-button-size-medium" Icon="@Icons.Material.Outlined.ArrowBackIos" Style="@($"color: {_arrowColor}")"/>
-                    </span>
-                </div>
-            </PreviousButtonTemplate>
-            <NextButtonTemplate>
-                <div class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon">
-                    <span class="mud-icon-button-label">
-                        <MudIcon Class="mud-ripple mud-ripple-icon mud-icon-button-size-medium" Icon="@Icons.Material.Outlined.ArrowForwardIos" Style="@($"color: {_arrowColor}")" />
-                    </span>
-                </div>
-            </NextButtonTemplate>
-
-            <ChildContent>
-                @*add new carousel pages here*@
-                <MudCarouselItem Transition="Transition.Slide">
-                    <div class="carousel-pane d-flex"> <Home /> </div>
-                </MudCarouselItem>
-
-                <MudCarouselItem Transition="Transition.Slide">
-                    <div class="carousel-pane d-flex"> <Github /> </div>
-                </MudCarouselItem>
-
-                <MudCarouselItem Transition="Transition.Slide">
-                    <div class="carousel-pane d-flex"> <Gitlab /> </div>
-                </MudCarouselItem>
-
-                <MudCarouselItem Transition="Transition.Slide">
-                    <div class="carousel-pane d-flex"> <MetalsDisplay /> </div>
-                </MudCarouselItem>
-
-                <MudCarouselItem Transition="Transition.Slide">
-                    <div class="carousel-pane d-flex"> <DakotahsTaxes /> </div>
-                </MudCarouselItem>
-            </ChildContent>
-
-        </MudCarousel>
-    </MudSwipeArea>
+    <Home />
+    <GitRepos />
+    <MetalsDisplay />
+    <DakotahsTaxes />
 </div>

@@ -1,12 +1,16 @@
-# Begin EnforceSSL metalsmarketdisplay.com
+# Begin EnforceSSL daltonsbaker.com
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
+    RewriteCond %{HTTP_HOST} ^(www.)?daltonsbaker.com$
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+
     RewriteBase /
 
-    # You must add all possible urls in your application here
-    RewriteRule ^counter /index.html [L]
-    RewriteRule ^fetchdata /index.html [L]
+    RewriteRule ^index.html - [L]
+    RewriteRule ^.*\.. - [L]
+    RewriteRule ^. /index.html [L]
     
     AddEncoding gzip .gz
     

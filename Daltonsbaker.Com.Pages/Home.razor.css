@@ -27,3 +27,11 @@
     margin: 2px;
     margin-top: 10px;
 }
+
+.disclaimer {
+    position: absolute;
+    bottom: 5px;
+    color: lightgrey;
+    text-align: center;
+    font-size: 11px;
+}

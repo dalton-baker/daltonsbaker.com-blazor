@@ -24,7 +24,7 @@
     position: absolute;
     bottom: 75px;
     right: 25px;
-    animation: fade-in 4s 2s, visible 100s 6s infinite, button-jump 5s 6s infinite;
+    animation: fade-in 4s 2s, visible 100s 6s infinite, button-jump 5s 2.5s infinite;
 }
 
 @keyframes fade-in {
@@ -49,62 +49,58 @@
 
 @keyframes button-jump {
     0% {
+        transform: rotate(0turn);
+    }
+
+    1% {
+        transform: rotate(0.02turn);
+    }
+
+    2% {
+        transform: rotate(0turn);
+    }
+
+    3% {
+        transform: rotate(-0.02turn);
+    }
+
+    4% {
+        transform: rotate(0turn);
+    }
+
+    5% {
+        transform: rotate(0.02turn);
+    }
+
+    6% {
+        transform: rotate(0turn);
+    }
+
+    7% {
+        transform: rotate(-0.02turn);
+    }
+
+    8% {
+        transform: rotate(0turn);
+    }
+
+    10% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(10px);
+    }
+
+    30% {
         transform: translateY(0px);
     }
 
     40% {
-        transform: rotate(0turn);
-    }
-
-    41% {
-        transform: rotate(0.02turn);
-    }
-
-    42% {
-        transform: rotate(0turn);
-    }
-
-    43% {
-        transform: rotate(-0.02turn);
-    }
-
-    44% {
-        transform: rotate(0turn);
-    }
-
-    45% {
-        transform: rotate(0.02turn);
-    }
-
-    46% {
-        transform: rotate(0turn);
-    }
-
-    47% {
-        transform: rotate(-0.02turn);
-    }
-
-    48% {
-        transform: rotate(0turn);
+        transform: translateY(10px);
     }
 
     50% {
-        transform: translateY(0px);
-    }
-
-    60% {
-        transform: translateY(10px);
-    }
-
-    70% {
-        transform: translateY(0px);
-    }
-
-    80% {
-        transform: translateY(10px);
-    }
-
-    90% {
         transform: translateY(0px);
     }
 

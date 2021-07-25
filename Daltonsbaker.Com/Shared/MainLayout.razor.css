@@ -4,6 +4,7 @@
     scroll-margin: 10px;
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
+    scroll-behavior: smooth;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -12,3 +13,50 @@
     .page::-webkit-scrollbar {
         display: none;
     }
+
+.scroll-icon {
+    color: white;
+    font-size: 25px;
+}
+
+.scroll-notify {
+    opacity: 0;
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    animation: fade-in 2s 3s, visible 100s 5s infinite, button-jump 1s 3s infinite;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button-jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

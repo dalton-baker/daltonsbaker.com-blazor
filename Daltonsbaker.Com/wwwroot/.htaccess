@@ -8,7 +8,8 @@
 
     RewriteBase /
 
-    # You must add all possible urls in your application here
+    RewriteRule ^index.html - [L]
+    RewriteRule ^.*\.. - [L]
     RewriteRule ^. /index.html [L]
     
     AddEncoding gzip .gz

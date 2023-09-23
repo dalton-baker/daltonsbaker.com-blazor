@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     scroll-margin: 0px;
-    scroll-snap-align: start;
 }
 
 .translucent-card {

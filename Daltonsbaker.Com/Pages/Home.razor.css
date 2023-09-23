@@ -2,8 +2,6 @@
     position: relative;
     height: 100vh;
     scroll-margin: 10px;
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
     scroll-behavior: smooth;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -22,8 +20,8 @@
 .scroll-notify {
     opacity: 0;
     position: absolute;
-    bottom: 75px;
-    right: 25px;
+    bottom: 2rem;
+    right: 2rem;
     animation: fade-in 4s 2s, visible 100s 6s infinite, button-jump 5s 2.5s infinite;
 }
 

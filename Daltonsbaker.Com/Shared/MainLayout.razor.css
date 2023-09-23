@@ -1,12 +1,8 @@
 .page {
     position: relative;
     height: 100vh;
-    scroll-margin: 10px;
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
     scroll-behavior: smooth;
     overflow-y: scroll;
-    -ms-overflow-style: none;
     scrollbar-width: none;
 }
 

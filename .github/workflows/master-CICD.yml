@@ -34,7 +34,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        local-dir: ${{ github.WORKSPACE }}/${{ env.MAIN_PROJECT }}/bin/Release/net5.0/publish/wwwroot/
+        local-dir: ${{ github.WORKSPACE }}/${{ env.MAIN_PROJECT }}/bin/Release/net7.0/publish/wwwroot/
         server: ${{ secrets.DEPLOY_SERVER }}
         username: ${{ secrets.DEPLOY_USERNAME }}
         password: ${{ secrets.DEPLOY_PASSWORD }}

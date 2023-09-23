@@ -10,6 +10,10 @@
         display: none;
     }
 
+    .page > ::deep div:not(:first-child):not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
 .scroll-icon {
     color: white;
     font-size: 25px;

@@ -3,7 +3,7 @@ name: master CI/CD
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    #branches: [ master ]
 
 jobs:
   Build-Test-Deploy:
